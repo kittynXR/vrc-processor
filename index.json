@@ -1,0 +1,39 @@
+{
+  "name": "cátte — VRC Processor VPM Repository",
+  "author": "kittyn",
+  "url": "https://vrc-processor.kittyn.cat/index.json",
+  "id": "cat.kittyn.vrcprocessor",
+  "packages": {
+    "cat.kittyn.vrcprocessor": {
+      "versions": {
+        "1.0.1": {
+          "name": "cat.kittyn.vrcprocessor",
+          "displayName": "cátte — VRC Processor",
+          "version": "1.0.1",
+          "unity": "2019.4",
+          "description": "VRChat-specific utility processor for avatar optimization and setup.",
+          "author": {
+            "name": "kittyn",
+            "email": "cat@kittyn.cat",
+            "url": "https://kittyn.cat"
+          },
+          "license": "MIT",
+          "dependencies": {},
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.0.0"
+          },
+          "keywords": [
+            "kittyn",
+            "catte",
+            "vrchat",
+            "unity",
+            "editor",
+            "tool"
+          ],
+          "url": "https://github.com/kittynXR/cat.kittyn.vrcprocessor/releases/download/v1.0.1/cat.kittyn.vrcprocessor-1.0.1.zip",
+          "samples": []
+        }
+      }
+    }
+  }
+}
