@@ -22,6 +22,17 @@ namespace Catte.VRCProcessor
                 willProcess = true;
                 importer.isReadable = true;
                 importer.importBlendShapeNormals = ModelImporterNormals.Import;
+
+                // Set Legacy Blend Shape Normals using reflection (internal Unity property)
+                var legacyProp = typeof(ModelImporter).GetProperty(
+                    "legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes",
+                    System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Public
+                );
+
+                if (legacyProp != null)
+                {
+                    legacyProp.SetValue(importer, true);
+                }
             }
         }
 
